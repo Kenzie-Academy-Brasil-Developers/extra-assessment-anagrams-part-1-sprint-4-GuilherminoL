@@ -8,7 +8,7 @@ button.addEventListener("click", function () {
 function alphabetize(a) {
     return a.toLowerCase().split("").sort().join("").trim();
   }
-  console.log(palavras.length)
+
 
 function getAnagramsOf(text) {
     let output = []
