@@ -3,21 +3,26 @@ body{
     color :#ffffff;
     text-align: center;
 }
-main{
+main div {
+    display: flex;
+    flex-wrap: wrap;
     width:80%; 
-    margin:auto
+    margin:auto;
+    justify-content: center;
+    align-items:center
 }
-input{
-    padding: 20px; 
-    border-radius: 50px;
-    border: none;
-}
-button{
-    margin-left: 20px;
-    background-color: #F9E900;
+input,#findButton{
     padding: 20px; 
     border-radius: 50px;
     border: 2px solid transparent;
+    max-width: 100%;
+    margin: 20px 20px 20px 0;
+}
+button{
+    background-color: #F9E900;
+    padding: 20px; 
+    border-radius: 50px;
+    
 }
 
 #result{
@@ -34,7 +39,7 @@ button{
 }
 
 @media (min-width: 768px){
-    button:hover{
+    #findButton:hover{
         cursor: pointer;
         background-color:#0A1045;
         border-color: #F9E900;
